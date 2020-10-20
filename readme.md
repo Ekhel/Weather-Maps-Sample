@@ -2,6 +2,15 @@
 ---
 
 ## 2 Endpoint API Connect With one request (Weather and MapBox)
+* Description :
+  - the weather app use API from [MapBox](https://www.mapbox.com) and [Weather](https://weatherstack.com)
+  - How to cycle method ??
+  - first,. we take information about location from mapbox.. so mapbox can find the location and show the information
+  - second,. from information obtained from the mapbox, we made some function to retrive the information.
+  - third, and send information about location (name of location, Longitude and Latitude so on..) and then bring the information to weather stack to get the weather data for the location.
+  - fourth, the weather stack can show u.. information about the location that has been taken from mapbox.
+
+---
 
 * Source API (Register to get token)
   - [Weather](https://weatherstack.com/)
