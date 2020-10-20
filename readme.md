@@ -69,7 +69,7 @@
             } else if (body.error) {
                 callback('Unable to find location', undefined)
             } else {
-                callback(undefined, 'Cuaca Hari ini ' + body.current.weather_descriptions[0] + ' Temp Saat ini ' + body.current.temperature + ' C')
+                callback(undefined, 'Weather today ' + body.current.weather_descriptions[0] + ' Temp Right now ' + body.current.temperature + ' C')
             }
         })
     }
