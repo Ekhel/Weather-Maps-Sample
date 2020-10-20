@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    {{>header}}
+    <br />
+    <br />
+    <div class="ui segment">
+        <div class="ui container">
+            <h3>Search Weather Location </h3>
+            <form>
+                <div class="ui right aligned category search">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="Weathers Location">
+                        <i class="search icon"></i>
+                    </div>
+                    <br />
+                    <br />
+                    <button class="ui inverted green button">Search</button>
+                </div>
+            </form>
+            <div class="ui secondary segment">
+                <strong><text class="header"> Info Box</text></strong> <br />
+                <hr />
+                <p id="message-1"></p>
+                <p id="message-2"></p>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
