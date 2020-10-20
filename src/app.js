@@ -26,10 +26,10 @@ app.get('', (req, res) => {
 })
 
 app.get('/weather', (req, res) => {
-    if (!req.query.address) {
-        return res.send({
-            error: 'You must provide an address!'
-        })
+    if(!req.query.address){
+        return res.render('weather', {
+            error: 'Provide search term'
+        });
     }
 
     geocode(req.query.address, (error, { latitude, longitude, location } = {}) => {
@@ -37,12 +37,13 @@ app.get('/weather', (req, res) => {
             return res.send({ error })
         }
 
-        forecast(latitude, longitude, (error, forecastData) => {
+        forecash(latitude, longitude, (error, forecastData) => {
             if (error) {
                 return res.send({ error })
             }
 
             res.send({
+                title: 'Search Weather',
                 forecast: forecastData,
                 location,
                 address: req.query.address

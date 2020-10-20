@@ -1,11 +1,3 @@
-console.log('cliet Side JS loaded');
-
-// fetch('http://puzzle.mead.io/puzzle').then((response) => {
-//     response.json().then((data) => {
-//         console.log(data)
-//     })
-// })
-
 const searchForm = document.querySelector('form');
 const searchElement = document.querySelector('input');
 const messageOne = document.querySelector('#message-1');
@@ -17,9 +9,9 @@ searchForm.addEventListener('submit', (event) => {
     const elementSearch = searchElement.value
 
     messageOne.textContent = 'Loading. . .'
-    messageTwo.textContent = 'Loading. . .'
+    messageTwo.textContent = ''
 
-    fetch('/weather?address=' + elementSearch ).then((response) => {
+    fetch('/weather?address=' + elementSearch).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 messageOne.textContent = data.error
