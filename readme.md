@@ -38,7 +38,7 @@
 * How to Use this project?
   - clone this Repo 
     ```
-        https://github.com/Ekhel/Weather-Maps-Sample.git
+      https://github.com/Ekhel/Weather-Maps-Sample.git
     ```
 
   - Node Initialize

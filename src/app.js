@@ -68,14 +68,14 @@ app.get('/products', (req, res) => {
 
 app.get('/help/*', (req, res) => {
     res.render('help', {
-        title: 'Nataours | Help Page',
+        title: 'Weather | Help Page',
         name: 'Michael'
     });
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'Nataours | about Page',
+        title: 'About The App',
         name: 'Michael'
     });
 })
